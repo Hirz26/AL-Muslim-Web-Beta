@@ -114,7 +114,6 @@ nav {
     justify-items: center;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 1.4rem;
 }
 
@@ -131,6 +130,7 @@ label {
 input[type="text"],
 input[type="number"],
 input[type="date"],
+input[type="tel"],
 select {
     width: 100%;
     padding: 10px;

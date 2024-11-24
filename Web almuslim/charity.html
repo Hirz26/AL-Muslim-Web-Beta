@@ -19,57 +19,41 @@
                         <a href="about.html">About</a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html#History">History</a></li>
-                            <hr>
                             <li><a href="about.html#University-structure">University Structure</a></li>
-                            <hr>
                             <li><a href="about.html#Achievement">Achievements</a></li>
-                            <hr>
                             <li><a href="about.html#University-plans">University Plans</a></li>
-                            <hr>
                             <li><a href="contact.html">Contact Us</a></li>
-                            <hr>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="programs.html">Program</a>
                         <ul class="dropdown-menu">
                             <li><a href="inbound.html">Inbound</a></li>
-                            <hr>
                             <li><a href="outbound.html">Outbound</a></li>
-                            <hr>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="Global.html">Global Engagement</a>
                         <ul class="dropdown-menu">
                             <li><a href="partner.html">Institutional Partnership</a></li>
-                            <hr>
                             <li><a href="charity.html">Global Charity</a></li>
-                            <hr>
                             <li><a href="">Scholarship</a></li>
-                            <hr>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="enrollment.html">Enrollment</a>
                         <ul class="dropdown-menu">
                             <li><a href="domestic.html">Domestic admission</a></li>
-                            <hr>
                             <li><a href="international.html">International admission</a></li>
-                            <hr>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="campus.html">campus Life</a>
                         <ul class="dropdown-menu">
                             <li><a href="campus.html#Culture">Culture</a></li>
-                            <hr>
                             <li><a href="campus.html#Boarding">Boarding / Accommodation</a></li>
-                            <hr>
                             <li><a href="campus.html#Living-cost">Living Cost</a></li>
-                            <hr>
                             <li><a href="campus.html#Travel">Travel</a></li>
-                            <hr>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="FAQ.html">FAQ</a></li>
@@ -77,70 +61,70 @@
             </nav>
         </header>
         <main>
-            <div class="container">
-                <div class="mainbox">
-                    <h1>International Enrollment</h1>
-                    <div class="form-container">
-                        <form id="personalInfoForm">
-                            <div class="formbox" style="display: flex;">
-                                <div class="form-group" style="width: 200px;">
-                                    <label for="firstName" style="width: 400px;">First Name:</label>
-                                    <input type="text" id="firstName" name="firstName" required>
-                                </div>
-                                <div class="form-group" style=" width: 200px; margin-left: 20px;">
-                                    <label for="lastName">Last Name:</label>
-                                    <input type="text" id="lastName" name="lastName" required>
-                                </div>
-                                <div class="form-group" style=" width: 50px; margin-left: 20px;">
-                                    <label for="age">Age:</label>
-                                    <input type="number" id="age" name="age" required min="0">
-                                </div>
+            <div class="container2">
+                <div class="form-container">
+                    <h2>Payment Information</h2>
+                    <form id="paymentForm">
+                        <div class="form-group">
+                            <label for="paymentMethod">Select Payment Method:</label>
+                            <select id="paymentMethod" name="paymentMethod" style="width: 150px;" required>
+                                <option value="">--Select--</option>
+                                <option value="Visa">Visa</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="Dana">Dana</option>
+                                <option value="LinkAja">LinkAja</option>
+                            </select>
+                        </div>
+                        <div class="formbox" style="display: flex;">
+                            <div class="form-group" style="width: 200px;">
+                                <label for="cardNumber">Card Number:</label>
+                                <input type="number" id="cardNumber" name="cardNumber" required>
                             </div>
-                            <div class="formbox" style="display: flex;">
-                                <div class="form-group" style="width: 350px;">
-                                    <label for="locationOfBirth">Location of Birth:</label>
-                                    <input type="text" id="locationOfBirth" name="locationOfBirth" required>
-                                </div>
-                                <div class="form-group" style="width: 140px; margin-left: 20px;">
-                                    <label for="dateOfBirth">Date of Birth:</label>
-                                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
-                                </div>
+                            <div class="form-group" style="width: 50px; margin-left: 20px;">
+                                <label for="expiryDate">MM/YY</label>
+                                <input type="text" id="expiryDate" name="expiryDate" required>
                             </div>
-                            <div class="form-group" style="width: 550px;">
-                                <label for="gender">Gender:</label>
-                                <select id="gender" name="gender" required>
-                                    <option value="">Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select>
+                            <div class="form-group" style="width: 50px; margin-left: 20px;">
+                                <label for="securityCode">Code:</label>
+                                <input type="number" id="securityCode" name="securityCode" required>
                             </div>
-                            <div class="formbox" style="display: flex;">
-                                <div class="form-group" style="width: 400px;">
-                                    <label for="country">Country:</label>
-                                    <input type="text" id="country" name="country" required>
-                                </div>
-                                <div class="form-group" style="width: 90px; margin-left: 20px;">
-                                    <label for="zipCode">Zip Code:</label>
-                                    <input type="number" id="zipCode" name="zipCode" required min="0" max="100000">
-                                </div>
+                        </div>
+                    </form>
+                    <h2>Billing Information</h2>
+                    <form id="billingForm">
+                        <div class="formbox" style="display: flex;">
+                            <div class="form-group" style="width: 170px;">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="firstName" required>
                             </div>
-                            <div class="form-group" style="width: 530px;">
-                                <label for="address">Address:</label>
-                                <input type="text" id="address" name="address" required>
+                            <div class="form-group" style="width: 170px; margin-left: 20px;">
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="lastName" required>
                             </div>
-                            <div class="formbox" style="display: flex;">
-                                <div class="form-group" style="width: 400px;">
-                                    <label for="school">Graduated From:</label>
-                                    <input type="text" id="school" name="school" required>
-                                </div>
-                                <div class="form-group" style="width: 90px; margin-left: 20px;">
-                                    <label for="GPA">GPA:</label>
-                                    <input type="number" id="GPA" name="GPA" required min="0.1" max="4.0">
-                                </div>
+                        </div>
+                        <div class="formbox" style="display: flex;">
+                            <div class="form-group" style="width: 250px;">
+                                <label for="billingAddress">Billing Address:</label>
+                                <input type="text" id="billingAddress" name="billingAddress" required>
                             </div>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
+                            <div class="form-group" style="width: 90px; margin-left: 20px;">
+                                <label for="city">City:</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            
+                        </div>
+                        <div class="formbox" style="display: flex;">
+                            <div class="form-group" style="width: 250px;">
+                                <label for="phoneNumber">Phone Number:</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                            </div>
+                            <div class="form-group" style="width: 90px; margin-left: 20px;">
+                                <label for="postalCode">Postal Code:</label>
+                                <input type="number" id="postalCode" name="postalCode" required>
+                            </div>
+                        </div>
+                        <button type="submit">Donate!</button>
+                    </form>
                 </div>
             </div>
         </main>
