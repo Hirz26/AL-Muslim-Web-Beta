@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Office of International Affairs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="enrollment.css">
+        <link rel="icon" href="pics/UMUSLIM.png" type="image/png" >
+    </head>
+    <body>
+        <header> 
+            <div class="mainlogo">
+                <a href="https://oia.umuslim.ac.id/"><img src="pics/KUI.png" alt="home button"></a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home.html">Beranda</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="about.html">About</a>
+                        <ul class="dropdown-menu" style="left: -200000px;">
+                            <li><a href="about.html#History">History</a></li>
+                            <hr>
+                            <li><a href="about.html#University-structure">University Structure</a></li>
+                            <hr>
+                            <li><a href="about.html#Achievement">Achievements</a></li>
+                            <hr>
+                            <li><a href="about.html#University-plans">University Plans</a></li>
+                            <hr>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="programs.html">Program</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="inbound.html">Inbound</a></li>
+                            <hr>
+                            <li><a href="outbound.html">Outbound</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="Global.html">Global Engagement</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="partner.html">Institutional Partnership</a></li>
+                            <hr>
+                            <li><a href="charity.html">Global Charity</a></li>
+                            <hr>
+                            <li><a href="">Scholarship</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="enrollment.html">Enrollment</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="domestic.html">Domestic admission</a></li>
+                            <hr>
+                            <li><a href="international.html">International admission</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="campus.html">campus Life</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="campus.html#Culture">Culture</a></li>
+                            <hr>
+                            <li><a href="campus.html#Boarding">Boarding / Accommodation</a></li>
+                            <hr>
+                            <li><a href="campus.html#Living-cost">Living Cost</a></li>
+                            <hr>
+                            <li><a href="campus.html#Travel">Travel</a></li>
+                            <hr>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="FAQ.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="mainbox">
+                    <h1>International Enrollment</h1>
+                    <div class="form-container">
+                        <form id="personalInfoForm">
+                            <div class="formbox" style="display: flex;">
+                                <div class="form-group" style="width: 200px;">
+                                    <label for="firstName" style="width: 400px;">First Name:</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group" style=" width: 200px; margin-left: 20px;">
+                                    <label for="lastName">Last Name:</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                                <div class="form-group" style=" width: 50px; margin-left: 20px;">
+                                    <label for="age">Age:</label>
+                                    <input type="number" id="age" name="age" required min="0">
+                                </div>
+                            </div>
+                            <div class="formbox" style="display: flex;">
+                                <div class="form-group" style="width: 350px;">
+                                    <label for="locationOfBirth">Location of Birth:</label>
+                                    <input type="text" id="locationOfBirth" name="locationOfBirth" required>
+                                </div>
+                                <div class="form-group" style="width: 140px; margin-left: 20px;">
+                                    <label for="dateOfBirth">Date of Birth:</label>
+                                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                                </div>
+                            </div>
+                            <div class="form-group" style="width: 550px;">
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="formbox" style="display: flex;">
+                                <div class="form-group" style="width: 400px;">
+                                    <label for="address">Address:</label>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                                <div class="form-group" style="width: 90px; margin-left: 20px;">
+                                    <label for="zipCode">Zip Code:</label>
+                                    <input type="number" id="zipCode" name="zipCode" required min="0" max="100000">
+                                </div>
+                            </div>
+                            <div class="formbox" style="display: flex;">
+                                <div class="form-group" style="width: 400px;">
+                                    <label for="address">Graduated From:</label>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                                <div class="form-group" style="width: 90px; margin-left: 20px;">
+                                    <label for="zipCode">GPA:</label>
+                                    <input type="number" id="zipCode" name="zipCode" required min="0.1" max="4.0">
+                                </div>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footermain">
+                <div class="footertop">
+                    <div class="contact">
+                        <h1>Contact Us:</h1>
+                        <p style="font-weight: bold;">Office of Intenational Affairs</p>
+                        <p>kampus induk</p>
+                        <p>Universitas Al-Muslim</p>
+                        <p>Jln. Tengku Abdurrahman No. 37</p>
+                        <p>Bireuen, Aceh, Indonesia</p>
+                        <p style="margin-top: 0.8em;">Email: <a href="mailto:international.affairs@umuslim.ac.id">international.affairs@umuslim.ac.id</a></p>
+                        <p>Telp: <a href="tel:+6281377442600">+62 813-7744-2600</a></p>
+                    </div>
+                    <div class="working">
+                        <h1>Operation hours</h1>
+                        <p style="font-weight: bold;">Monday - Friday</p>
+                        <p>09:00 - 12:00</p>
+                        <p>14:00 - 16:00</p>
+                        <p style="margin-top: 0.8em; font-weight: bold;">Closed on weekends and holidays</p>
+                    </div>
+                </div>
+                <div class="footerbot">
+                    <hr>
+                    <!-- <p>Last Modified: 
+                            <?php 
+                                echo date("F d, Y H:i:s", filemtime(__FILE__)); 
+                            ?>
+                        </p> 
+                    -->
+                    <p id="last-modified" style="margin-top: 1em; margin-left: 7em;"></p>
+                    <p style="margin-left: 7em;">copyright &copy ; 2024 Universitas Al-Muslim</p>
+    
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7946.854764773301!2d96.77558149478637!3d5.195313579128995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30474325d27fab3d%3A0x2612011c43c8bba9!2sUniversitas%20Almuslim%20Bireuen!5e0!3m2!1sid!2sid!4v1730210978003!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            .socials>ul>li*4>a>img
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
