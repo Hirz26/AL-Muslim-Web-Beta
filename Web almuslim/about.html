@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="eng">
     <head>
         <title>Office of International Affairs</title>
         <meta charset="UTF-8">
@@ -8,21 +8,21 @@
         <link rel="icon" href="pics/UMUSLIM.png" type="image/png" >
     </head>
     <body>
-        <header>
+        <header> 
             <div class="mainlogo">
                 <a href="https://oia.umuslim.ac.id/"><img src="pics/KUI.png" alt="home button"></a>
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="home.html">Beranda</a></li>
+                    <li class="nav-item"><a href="home.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="about.html">About</a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html#History">History</a></li>
-                            <li><a href="about.html#University-structure">University Structure</a></li>
-                            <li><a href="about.html#Achievement">Achievements</a></li>
-                            <li><a href="about.html#University-plans">University Plans</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="about.html#history" onclick="showContent('history')">History</a></li>
+                            <li><a href="about.html#structure" onclick="showContent('structure')">University Structure</a></li>
+                            <li><a href="about.html#achievements" onclick="showContent('achievements')">Achievements</a></li>
+                            <li><a href="about.html#plans" onclick="showContent('plans')">University Plans</a></li>
+                            <li><a href="about.html#contact" onclick="showContent('contact')">Contact Us</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -35,25 +35,18 @@
                     <li class="nav-item dropdown">
                         <a href="Global.html">Global Engagement</a>
                         <ul class="dropdown-menu">
-                            <li><a href="partner.html">Institutional Partnership</a></li>
-                            <li><a href="charity.html">Global Charity</a></li>
-                            <li><a href="">Scholarship</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enrollment.html">Enrollment</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="domestic.html">Domestic admission</a></li>
-                            <li><a href="international.html">International admission</a></li>
+                            <li><a href="global.html#partner" onclick="showContent('partner')">Institutional Partnership</a></li>
+                            <li><a href="global.html#charity" onclick="showContent('charity')">Global Charity</a></li>
+                            <li><a href="global.html#scholarships" onclick="showContent('scholarships')">Scholarship</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="campus.html">campus Life</a>
                         <ul class="dropdown-menu">
-                            <li><a href="campus.html#Culture">Culture</a></li>
-                            <li><a href="campus.html#Boarding">Boarding / Accommodation</a></li>
-                            <li><a href="campus.html#Living-cost">Living Cost</a></li>
-                            <li><a href="campus.html#Travel">Travel</a></li>
+                            <li><a href="campus.html#Culture" onclick="showContent('culture')">Culture</a></li>
+                            <li><a href="campus.html#Boarding" onclick="showContent('boarding')">Boarding / Accommodation</a></li>
+                            <li><a href="campus.html#Living-cost" onclick="showContent('cost')">Living Cost</a></li>
+                            <li><a href="campus.html#Travel" onclick="showContent('travel')">Travel</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="FAQ.html">FAQ</a></li>
@@ -61,50 +54,78 @@
             </nav>
         </header>
         <main>
-            <div class="wrapper">
-                <div class="mainbox">
-                    <div class="title" id="title"><h1>ABOUT</h1></div>
-                    <hr>
-                    <div class="contentbox" id="History">
-                        <div class="contenttextfull">
-                            <h1>History</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
+            <div class="container">
+                <div class="title-box">
+                    <h1>About Us</h1>
+                </div>
+                <div class="content">
+                    <div class="sidebar">
+                        <button onclick="showContent('history')">History</button>
+                        <button onclick="showContent('structure')">University Structure</button>
+                        <button onclick="showContent('achievements')">Achievements</button>
+                        <button onclick="showContent('plans')">University Plans</button>
+                        <button onclick="showContent('contact')">Contact Us</button>
                     </div>
-                    <hr>
-                    <div class="contentbox" id="University-structure">
-                        <div class="contentimgfull">
-                            <h1>University Structure</h1>
-                            <img src="pics/struktur.png" alt="Struktur Al-Muslim">
+                    <div class="main-content">
+                        <div id="history" class="content-section" style="display: block;">
+                            <h1>HISTORY</h1>
+                            <p>The Almuslim Peusangan Foundation in Bireuen, Aceh Province was 
+                                established on 21 Jumadil Akhir 1348 H, corresponding to November 24, 
+                                1929. Initially named Jami'ah Al Muslim, its founding figures included
+                                Tgk. Abdurrahman Meunasah Meucap, Tgk. Chik Muhammad Djohan Alamsyah 
+                                (Ulee Balang Peusangan), Tgk. H. Ibrahim Meunasah Barat, Tgk. Abbas 
+                                Bardan, Tgk. Abed Idham, Habib Muhammad, Tgk. Ridwan, and others.</p>
+                            <p>The establishment of Almuslim Peusangan in 1929 took place amidst the 
+                                war between the people of Aceh and Dutch soldiers, in a struggle for 
+                                independence led by Tgk. Abdurrahman Meunasah Meucap. During this 
+                                prolonged conflict, they observed and realized a dwindling optimism 
+                                for achieving victory due to changing circumstances and conditions, 
+                                which in turn led to tactics and strategies that were only advantageous
+                                to the enemy. Because the enemy was fighting far from their homeland, 
+                                they could think calmly in their own country while consolidating 
+                                themselves by acquiring new sources of strength, both in terms of 
+                                knowledge and products, to deploy on the battlefield. This situation 
+                                was in stark contrast to the conditions of the Acehnese fighters, who 
+                                at that time were thinking and preparing various strategies while 
+                                simultaneously engaged in war. As a result, everything was neglected, 
+                                including the economy, state life, and education. In such a situation, 
+                                the freedom fighter Tgk. Abdurrahman Meunasah Meucap and his companions 
+                                concluded that all of this was due to ignorance. Therefore, they sought 
+                                another way, namely to build and light a lamp in the darkness, to 
+                                illuminate the path they would take to address this challenge by 
+                                establishing the Almuslim Peusangan Education or Foundation with a 
+                                curriculum tailored to the needs of that time, using an integrated and 
+                                comprehensive system. This was a comprehensive curriculum, so that its 
+                                graduates at that time became experts in various disciplines.</p>
+                            <p>Almuslim University in Peusangan, Bireuen, Aceh Province, is the only 
+                                university in Bireuen Regency. Established based on the Decree of the 
+                                Minister of National Education of the Republic of Indonesia Number: 
+                                02/D/O/2003, it was a transformation from several higher education 
+                                institutions within the Almuslim Higher Education Institution, namely 
+                                the Agricultural College, the Teacher Training and Education College, 
+                                and the Academy of Management and Computer Science, which were founded 
+                                on 14 Dzulqa'dah 1406 H or August 1, 1985. At the age of 12, Almuslim 
+                                University had 8,149 active students, had graduated 18,239 graduates, 
+                                had 517 lecturers, most of whom held Master's and Doctoral degrees, 
+                                and 250 administrative and supporting staff. Currently, there are also 
+                                73 lecturers pursuing their Master's and Doctoral studies at various 
+                                universities both domestically and internationally with scholarships 
+                                from the Higher Education Funding Agency of the Ministry of Education 
+                                and Culture of the Republic of Indonesia and scholarships from Almuslim 
+                                University."</p>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="contentbox" id="Achievement">
-                        <div class="contenttextfull">
-                            <h1>Achievements</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.
-                            </p>
+                        <div id="structure" class="content-section" style="display: none;">
+                            <h1>UNIVERSITY STRUCTURE</h1>
+                            <img src="pics/struktur.png" alt="struktur Almuslim" style="margin-left: 6em;">
+                        </div>
+                        <div id="achievements" class="content-section" style="display: none;">
+                            <h1>ACHIEVEMENTS</h1>
+                            <p>As a leading private university in Aceh, Almuslim University has demonstrated 
+                                a strong commitment to advancing higher education in the region. Since its 
+                                establishment in 1985, Umuslim has successfully produced thousands of 
+                                high-quality graduates who have contributed to the nation's development. The 
+                                repeated recognition as the Best Private University in Aceh is a testament 
+                                to its quality and dedication to providing excellent education.</p>
                             <div class="achievement">
                                 <h1>new & notable</h1>
                                 <div class="achievementrow">
@@ -124,25 +145,115 @@
                                         <p>insert text here</p>
                                     </div>
                                 </div>
-                            </div>   
+                            </div>    
+                        </div>
+                        <div id="plans" class="content-section" style="display: none;">
+                            <p>These are the university plans...</p>
+                        </div>
+                        <div id="contact" class="content-section" style="display: none;">
+                            <h1>CONTACT US</h1>
+                            <div class="contacts" style="display: flex; justify-content: space-evenly;">
+                                <div class="contactbox">
+                                    <div class="contactboxtop">
+                                        <img src="pics/one.jpg" alt="Foto pak Saumil">
+                                        <table>
+                                            <tr>
+                                                <th>Nama </th>
+                                                <th style="padding-right: 0.5em;">:</th>
+                                                <td>Saumil Hadi</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Possisi </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td>Ketua</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td><a href="mailto:#">Email kerja</td>
+                                            </tr>
+                                            <tr>
+                                                <th>No. telefon </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td><a href="tel:+6281377442600">+62 813-7744-2600</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="contactboxbot">
+                                        <h1>Summary</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, enim molestiae eaque veritatis esse optio 
+                                            dolorem sunt commodi rerum eos placeat voluptate quo, sapiente autem amet perspiciatis, nostrum dolores!</p>
+                                    </div>
+                                </div>
+                                <div class="contactbox">
+                                    <div class="contactboxtop">
+                                        <img src="pics/one.jpg" alt="Foto pak Saumil">
+                                        <table>
+                                            <tr>
+                                                <th>Nama </th>
+                                                <th style="padding-right: 0.5em;">:</th>
+                                                <td>kak naf</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Possisi </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td><a href="mailto:#">Email kerja</td>
+                                            </tr>
+                                            <tr>
+                                                <th>No. telefon </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td><a href="tel:#">no. pribadi</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="contactboxbot">
+                                        <h1>Summary</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, enim molestiae eaque veritatis esse optio 
+                                            dolorem sunt commodi rerum eos placeat voluptate quo, sapiente autem amet perspiciatis, nostrum dolores!</p>
+                                    </div>
+                                </div>
+                                <div class="contactbox">
+                                    <div class="contactboxtop">
+                                        <img src="pics/one.jpg" alt="Foto pak Saumil">
+                                        <table>
+                                            <tr>
+                                                <th>Nama </th>
+                                                <th style="padding-right: 0.5em;">:</th>
+                                                <td>bg furqan</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Possisi </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td><a href="mailto:#">Email kerja</td>
+                                            </tr>
+                                            <tr>
+                                                <th>No. telefon </th>
+                                                <th style="margin-right: 0.5em;">:</th>
+                                                <td><a href="tel:#">no. pribadi</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="contactboxbot">
+                                        <h1>Summary</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, enim molestiae eaque veritatis esse optio 
+                                            dolorem sunt commodi rerum eos placeat voluptate quo, sapiente autem amet perspiciatis, nostrum dolores!</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <hr>
-                    <div class="contentbox" id="University-plans">
-                        <div class="contenttextl">
-                            <h1>University-plans</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.</p>
-                        </div>
-                        <img src="pics/one.jpg" alt="">
-                    </div>
-                </div>
-            </div>   
+                </div>  
+            </div>
         </main>
         <footer>
             <div class="footermain">
@@ -183,9 +294,6 @@
             </div>
             .socials>ul>li*4>a>img
         </footer>
-        <script src="script.js"></script>
+        <script src="side.js"></script>
     </body>
 </html>
-
-
-

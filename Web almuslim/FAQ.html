@@ -14,15 +14,15 @@
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="home.html">Beranda</a></li>
+                    <li class="nav-item"><a href="home.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="about.html">About</a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html#History">History</a></li>
-                            <li><a href="about.html#University-structure">University Structure</a></li>
-                            <li><a href="about.html#Achievement">Achievements</a></li>
-                            <li><a href="about.html#University-plans">University Plans</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="about.html#history" onclick="showContent('history')">History</a></li>
+                            <li><a href="about.html#structure" onclick="showContent('structure')">University Structure</a></li>
+                            <li><a href="about.html#achievements" onclick="showContent('achievements')">Achievements</a></li>
+                            <li><a href="about.html#plans" onclick="showContent('plans')">University Plans</a></li>
+                            <li><a href="about.html#contact" onclick="showContent('contact')">Contact Us</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -35,25 +35,18 @@
                     <li class="nav-item dropdown">
                         <a href="Global.html">Global Engagement</a>
                         <ul class="dropdown-menu">
-                            <li><a href="partner.html">Institutional Partnership</a></li>
-                            <li><a href="charity.html">Global Charity</a></li>
-                            <li><a href="">Scholarship</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enrollment.html">Enrollment</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="domestic.html">Domestic admission</a></li>
-                            <li><a href="international.html">International admission</a></li>
+                            <li><a href="global.html#partner" onclick="showContent('partner')">Institutional Partnership</a></li>
+                            <li><a href="global.html#charity" onclick="showContent('charity')">Global Charity</a></li>
+                            <li><a href="global.html#scholarships" onclick="showContent('scholarships')">Scholarship</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="campus.html">campus Life</a>
                         <ul class="dropdown-menu">
-                            <li><a href="campus.html#Culture">Culture</a></li>
-                            <li><a href="campus.html#Boarding">Boarding / Accommodation</a></li>
-                            <li><a href="campus.html#Living-cost">Living Cost</a></li>
-                            <li><a href="campus.html#Travel">Travel</a></li>
+                            <li><a href="campus.html#Culture" onclick="showContent('culture')">Culture</a></li>
+                            <li><a href="campus.html#Boarding" onclick="showContent('boarding')">Boarding / Accommodation</a></li>
+                            <li><a href="campus.html#Living-cost" onclick="showContent('cost')">Living Cost</a></li>
+                            <li><a href="campus.html#Travel" onclick="showContent('travel')">Travel</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="FAQ.html">FAQ</a></li>
@@ -184,6 +177,6 @@
             </div>
             .socials>ul>li*4>a>img
         </footer>
-        <script src="script.js"></script>
+        <script src="faq.js"></script>
     </body>
 </html>

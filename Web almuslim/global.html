@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="eng">
     <head>
         <title>Office of International Affairs</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="programs.css">
+        <link rel="stylesheet" type="text/css" href="content.css">
         <link rel="icon" href="pics/UMUSLIM.png" type="image/png" >
+        <style>
+            .imgstack{
+                overflow: auto;
+                justify-content: center;
+                img{
+                    height: 100px;
+                    margin-right: 2em;
+                }
+            } 
+        </style>
     </head>
     <body>
-        <header>
+        <header> 
             <div class="mainlogo">
                 <a href="https://oia.umuslim.ac.id/"><img src="pics/KUI.png" alt="home button"></a>
             </div>
@@ -55,37 +65,60 @@
         </header>
         <main>
             <div class="container">
-                <div class="mainbox">
-                    <a href="inbound.html"><h1>INBOUND MOBILITY</h1></a>
-                    <div class="box">
-                        <div class="overlay">
-                            <h1><a href="inbound.html">INBOUND MOBILITY</a></h1>
-                            <hr>
-                            <ul>
-                                <li><a href="inbound.html#Summer-course-program"><p>Summer Course Program</p></a></li>
-                                <li><a href="inbound.html#Student-exchange"><p>Student Exchange</p></a></li>
-                                <li><a href="inbound.html#International-student"><p>International Student</p></a></li>
-                                <li><a href="inbound.html#Reasearch-Coloboration"><p>Research Coloboration</p></a></li>
-                                <li><a href="inbound.html#International-conference"><p>Intenational Conference</p></a></li>      
-                            </ul>
-                        </div>
-                        <img src="pics/one.jpg" alt="">
-                    </div>
+                <div class="title-box">
+                    <h1>About Us</h1>
                 </div>
-                <div class="mainbox">
-                    <a href="outbound.html"><h1>OUTBOUND MOBILITY</h1></a>
-                    <div class="box">
-                        <div class="overlay">
-                            <h1><a href="outbound.html">OUTBOUND MOBILITY</a></h1>
-                            <hr>
-                            <ul>
-                                <li><a href="outbound.html#Study-tour"><p>Study Tour</p></a></li>
-                                <li><a href="outbound.html#Student-exchange"><p>Student Exchange</p></a></li>
-                                <li><a href="outbound.html#Workshop-and-Planning"><p>Workshop and Planning</p></a></li>
-                                <li><a href="outbound.html#Reasearch-parntership"><p>Reasearch Partnership</p></a></li>      
-                            </ul>
+                <div class="content">
+                    <div class="sidebar">
+                        <button onclick="showContent('partner')">Institutional Partnership</button>
+                        <button onclick="showContent('charity')">Global Charity</button>
+                        <button onclick="showContent('scholarships')">Scholarship</button>
+                    </div>
+                    <div class="main-content">
+                        <div id="partner" class="content-section" style="display: block;">
+                            <div class="contentbox">
+                                <div class="contenttextfull">
+                                    <h1>Institutional Partnership</h1>
+                                    <p>Almuslim University, a renowned institution of higher learning in Aceh, 
+                                        has been dedicated to providing quality education and fostering 
+                                        intellectual growth since its establishment in 1985. With a strong 
+                                        commitment to academic excellence and community engagement, the university 
+                                        has forged strategic partnerships with various organizations, both domestic 
+                                        and international. These collaborations aim to enhance the overall learning 
+                                        experience, broaden student's horizons, and contribute to societal advancement.</p>
+                                    <div class="imgstack">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt="">
+                                       <img src="pics/UMUSLIM.png" alt=""> 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <img src="pics/one.jpg" alt="">
+                        <div id="charity" class="content-section" style="display: none;">
+                            <h1>Global Charity</h1>
+                            <p>We are committed to providing quality education, fostering innovation, and creating 
+                                positive change. Your generous donation will directly support:</p>
+                            <ul style="font-size: 1.6rem;">
+                                <li>Scholarships: Helping talented students from underprivileged backgrounds pursue their 
+                                    academic dreams.</li>
+                                <li>Research: Funding groundbreaking research projects that address local and global 
+                                    challenges.</li>
+                                <li>Infrastructure Development: Improving our campus facilities to enhance the learning 
+                                    environment.</li>
+                                <li>Community Outreach Programs: Empowering communities through education, healthcare, 
+                                    and social initiatives.</li>
+                            </ul>
+                            <p>Your contribution, no matter how big or small, will make a significant difference. 
+                                Join us in shaping the future of Aceh.</p>          
+                        </div>
+                        <div id="scholarships" class="content-section" style="display: none;">
+                            <h1>scholarships</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -129,6 +162,6 @@
             </div>
             .socials>ul>li*4>a>img
         </footer>
-        <script src="script.js"></script>
+        <script src="side.js"></script>
     </body>
 </html>

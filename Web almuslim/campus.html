@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="eng">
     <head>
         <title>Office of International Affairs</title>
         <meta charset="UTF-8">
@@ -8,21 +8,21 @@
         <link rel="icon" href="pics/UMUSLIM.png" type="image/png" >
     </head>
     <body>
-        <header>
+        <header> 
             <div class="mainlogo">
                 <a href="https://oia.umuslim.ac.id/"><img src="pics/KUI.png" alt="home button"></a>
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="home.html">Beranda</a></li>
+                    <li class="nav-item"><a href="home.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="about.html">About</a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html">History</a></li>
-                            <li><a href="about.html">University Structure</a></li>
-                            <li><a href="about.html">Achievement</a></li>
-                            <li><a href="about.html">University Plans</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="about.html#history" onclick="showContent('history')">History</a></li>
+                            <li><a href="about.html#structure" onclick="showContent('structure')">University Structure</a></li>
+                            <li><a href="about.html#achievements" onclick="showContent('achievements')">Achievements</a></li>
+                            <li><a href="about.html#plans" onclick="showContent('plans')">University Plans</a></li>
+                            <li><a href="about.html#contact" onclick="showContent('contact')">Contact Us</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -35,25 +35,18 @@
                     <li class="nav-item dropdown">
                         <a href="Global.html">Global Engagement</a>
                         <ul class="dropdown-menu">
-                            <li><a href="partner.html">Institutional Partnership</a></li>
-                            <li><a href="charity.html">Global Charity</a></li>
-                            <li><a href="">Scholarship</a></li>
+                            <li><a href="global.html#partner" onclick="showContent('partner')">Institutional Partnership</a></li>
+                            <li><a href="global.html#charity" onclick="showContent('charity')">Global Charity</a></li>
+                            <li><a href="global.html#scholarships" onclick="showContent('scholarships')">Scholarship</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="enrollment.html">Enrollment</a>
+                        <a href="campus.html">campus Life</a>
                         <ul class="dropdown-menu">
-                            <li><a href="domestic.html">Domestic admission</a></li>
-                            <li><a href="international.html">International admission</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="campus.html">Campus Life</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="campus.html#Culture">Culture</a></li>
-                            <li><a href="campus.html#Boarding">Boarding / Accommodation</a></li>
-                            <li><a href="campus.html#Living-cost">Living Cost</a></li>
-                            <li><a href="campus.html#Travel">Travel</a></li>
+                            <li><a href="campus.html#Culture" onclick="showContent('culture')">Culture</a></li>
+                            <li><a href="campus.html#Boarding" onclick="showContent('boarding')">Boarding / Accommodation</a></li>
+                            <li><a href="campus.html#Living-cost" onclick="showContent('cost')">Living Cost</a></li>
+                            <li><a href="campus.html#Travel" onclick="showContent('travel')">Travel</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a href="FAQ.html">FAQ</a></li>
@@ -61,67 +54,43 @@
             </nav>
         </header>
         <main>
-            <div class="wrapper">
-                <div class="mainbox">
-                    <div class="title" id="title"><h1>CAMPUS LIFE</h1></div>
-                    <hr>
-                    <div class="contentbox" id="Culture">
-                        <img src="pics/one.jpg" alt="">
-                        <div class="contenttextr">
+            <div class="container">
+                <div class="title-box">
+                    <h1>Campus Life</h1>
+                </div>
+                <div class="content">
+                    <div class="sidebar">
+                        <button onclick="showContent('culture')">Culture</button>
+                        <button onclick="showContent('boarding')">Boarding / Accommodation</button>
+                        <button onclick="showContent('cost')">Living Cost</button>
+                        <button onclick="showContent('travel')">Travel</button>
+                    </div>
+                    <div class="main-content">
+                        <div id="culture" class="content-section" style="display: block;">
                             <h1>Culture</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.</p>
+                            <p>Nestled in the heart of Aceh, Almuslim University stands as a testament to the enduring 
+                                spirit of learning and innovation. Its rich history, intertwined with the cultural tapestry 
+                                of the region, has shaped generations of scholars and leaders.</p>
+                            <p>The university's campus is more than just a place of study; it's a vibrant hub of intellectual 
+                                exchange, artistic expression, and spiritual growth. The serene atmosphere, coupled with 
+                                state-of-the-art facilities, creates an ideal environment for students to thrive.</p>
+                            <p>The surrounding area of Peusangan offers a unique blend of tradition and modernity. From 
+                                exploring ancient mosques to savoring local delicacies, visitors can experience the authentic 
+                                charm of Acehnese culture. The warm hospitality of the people and the breathtaking natural 
+                                beauty of the region make it an unforgettable destination.</p>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="contentbox" id="Boarding">
-                        <div class="contenttextl">
-                            <h1>Boarding/Acomodation</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.</p>
+                        <div id="boarding" class="content-section" style="display: none;">
+                            <h1>Boarding / Accommodation</h1>
                         </div>
-                        <img src="pics/one.jpg" alt="">
-                    </div>
-                    <hr>
-                    <div class="contentbox" id="Living-cost">
-                        <img src="pics/one.jpg" alt="">
-                        <div class="contenttextr">
+                        <div id="cost" class="content-section" style="display: none;">
                             <h1>Living Cost</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.</p>
                         </div>
-                    </div>
-                    <hr>
-                    <div class="contentbox" id="Travel">
-                        <div class="contenttextl">
+                        <div id="travel" class="content-section" style="display: none;">
                             <h1>Travel</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sunt repudiandae ipsa neque nemo vel 
-                                maxime placeat libero nam et, velit facere. Nihil dignissimos quibusdam necessitatibus quod voluptas 
-                                alias dolorum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint veniam, quas quibusdam, 
-                                maiores porro voluptate asperiores sunt nesciunt accusamus aspernatur, ipsum id ex soluta quisquam 
-                                inventore! Ipsa cum possimus labore? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore porro 
-                                impedit expedita error ad amet, nemo deleniti possimus officiis quod ratione earum animi, provident dignissimos 
-                                eveniet nostrum fugit quam voluptatibus.</p>
                         </div>
-                        <img src="pics/one.jpg" alt="">
                     </div>
                 </div>
-            </div>   
+            </div>
         </main>
         <footer>
             <div class="footermain">
@@ -162,9 +131,6 @@
             </div>
             .socials>ul>li*4>a>img
         </footer>
-        <script src="script.js"></script>
+        <script src="side.js"></script>
     </body>
 </html>
-
-
-
